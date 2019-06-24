@@ -20,5 +20,5 @@ Auth::routes();
 
 Route::get('/captain/{captain_slug}' , 'CaptainController@show')->name('show');
 Route::get('/captain' , 'CaptainController@index');
-Route::get('/captain/{captain_slug}/emergency', 'CaptainController@create')->name('emergency.create');
+Route::get('/captain/{captain_slug}/assignment', 'CaptainController@create')->name('assignment.create');
 Route::post('/captain/{captain_slug}' , 'CaptainController@store');
