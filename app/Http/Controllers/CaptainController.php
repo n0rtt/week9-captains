@@ -37,7 +37,7 @@ class CaptainController extends Controller
         $assignment->save();
         session()->flash('success_message', 'Success!');
 
-        return redirect()->route('emergency.create' , ['captain_slug' => $captain->name]);
+        return redirect()->route('assignment.create' , ['captain_slug' => $captain->name]);
     }
 
 
